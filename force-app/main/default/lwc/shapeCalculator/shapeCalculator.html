@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="Shape Calculator">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter Side of Square" onchange={sidechangehandler}>
+
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter Width of Rectangle" onchange={widthchangehandler}>
+
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter height of Rectangle" onchamge={heightchangehandler}>
+
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter digonal1 for rectangle" onchange={digonal1changehandler}>
+
+                </lightning-input>
+
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter digonal2 for rectangle" onchange={digonal2changehandler}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-button-group>
+                    <lightning-button label="Square" icon-position="right" onclick={calculatesquareareahandler}></lightning-button>
+                    <lightning-button label="Rectangle" icon-position="centre" onclick={calculaterectangleareahandler}></lightning-button>
+                    <lightning-button label="Rhombus" icon-position="left" onclick={calculaterhombusareahandler}></lightning-button>
+                </lightning-button-group>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-layout-item size="12" padding="around-medium">
+                    <lightning-formatted-text value={currentoutput}>
+
+                 </lightning-formatted-text>
+
+                </lightning-layout-item>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </lightning-card>
+    
+</template>
