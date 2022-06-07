@@ -4,6 +4,7 @@ public with sharing class SfdcDemoTestClass
 {
     @isTest 
     //Run test|Debug test
+    text SFDCDev;
     private static void printMessageTest() 
      {
         SFDCDev.printMessage();
